@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#cecdcd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#030f1e"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:textAllCaps="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="amount to be paid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="Rs. 250"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#030f1e"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:textAllCaps="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="paid to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="dinesh rijal"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#fff">
+        <RadioButton
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_gravity="top">
+        <TextView
+            android:textAllCaps="true"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:text="Qpay account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+            <TextView
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:text="Rs. 250"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/white"
+            android:text="dinesh rijal"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/black"
+        android:text="Other Accountsl"
+        android:textAllCaps="true"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/card_List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
